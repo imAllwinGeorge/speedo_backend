@@ -1,4 +1,4 @@
-import jwt, { SignOptions } from 'jsonwebtoken'
+import jwt, { type SignOptions } from 'jsonwebtoken'
 
 export class JwtServices {
   constructor(
