@@ -2,7 +2,7 @@ import { parentPort, workerData } from "node:worker_threads";
 import fs from 'fs'
 import csv from 'csv-parser'
 import { TripRepository } from "../repositories/trip-repository";
-import { TripPoints } from "../models/trip.model";
+import type { TripPoints } from "../models/trip.model";
 import mongoose from "mongoose";
 
 (async () => {

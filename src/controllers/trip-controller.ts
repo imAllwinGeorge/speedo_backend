@@ -1,9 +1,9 @@
-import { NextFunction, Request, Response } from "express";
+import type { NextFunction, Request, Response } from "express";
 import { AppError } from "../shared/errors/appError";
 import { HttpStatusCode } from "../shared/constants/constants";
-import { ITripController } from "../interfaces/controllers/trip-controller.interface";
+import type { ITripController } from "../interfaces/controllers/trip-controller.interface";
 import { TripServices } from "../services/trip-services";
-import {Multer} from 'multer'
+import type {Multer} from 'multer'
 
 interface MulterRequest extends Request {
   file?: Express.Multer.File;

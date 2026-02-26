@@ -1,5 +1,5 @@
-import { Trip } from "../../models/trip.model";
-import { IBaseRepository } from "./base-repository.interface";
+import type { Trip } from "../../models/trip.model";
+import type { IBaseRepository } from "./base-repository.interface";
 
 export interface ITripRepository extends IBaseRepository<Trip> {
 }

@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from "express"
+import type { NextFunction, Request, Response } from "express"
 import { upload } from "../configs/multer"
 import { BaseRoute } from "./base-route"
 import { tripController } from "../configs/container"

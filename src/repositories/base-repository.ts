@@ -1,5 +1,5 @@
 import { Model } from "mongoose";
-import { FilterQuery, IBaseRepository } from "../interfaces/repositories/base-repository.interface";
+import type { FilterQuery, IBaseRepository } from "../interfaces/repositories/base-repository.interface";
 
 
 export class BaseRepository<T> implements IBaseRepository<T> {

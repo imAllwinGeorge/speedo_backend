@@ -1,5 +1,5 @@
-import { NextFunction, Request, Response } from "express";
-import { IAuthController } from "../interfaces/controllers/authController.interface";
+import type{ NextFunction, Request, Response } from "express";
+import type{ IAuthController } from "../interfaces/controllers/authController.interface";
 import { HttpStatusCode } from "../shared/constants/constants";
 import { AuthServices } from "../services/auth-services";
 import { clearAuthCookies, setAuthCookies } from "../utils/cookie.helper";
