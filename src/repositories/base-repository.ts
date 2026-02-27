@@ -6,7 +6,7 @@ export class BaseRepository<T> implements IBaseRepository<T> {
   constructor(protected model: Model<T>) {}
 
   async find(filter: FilterQuery<T>): Promise<T[]> {
-    return this.model.find(filter);
+    return this.model.find(filter).sort({createdAt: -1});
   }
 
   async findAll(

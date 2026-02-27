@@ -23,9 +23,9 @@ export class TripContrller implements ITripController {
         new AppError("CSV file is required ", HttpStatusCode.BAD_REQUEST);
       }
 
-      await this._tripServices.upload(filePath, userId, name);
+      const result = await this._tripServices.upload(filePath, userId, name);
 
-      res.status(HttpStatusCode.CREATED).json({ message: "file updated!" });
+      res.status(HttpStatusCode.CREATED).json({ message: "file updated!", trip: result });
     } catch (error) {
       next(error);
     }
